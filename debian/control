@@ -1,0 +1,35 @@
+Source: multipledispatch
+Maintainer: Diane Trout <diane@debian.org>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9), dh-python,
+ python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3),
+ python3-all, python3-setuptools,
+Standards-Version: 3.9.6
+Vcs-Git: https://github.com/detrout/debian-multipledispatch.git
+Vcs-Browser: https://github.com/detrout/debian-multipledispatch
+Homepage: http://github.com/mrocklin/multipledispatch/
+
+Package: python-multipledispatch
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: select different implementations based on signature for Python 2
+ Multiple Displatch stores and selects between different
+ implementations of the same abstract operation. It selects the
+ appropriate implementation based on a signature, or list of types. We
+ build one dispatcher per
+ abstract operation.
+ .
+ This contains the Python 2 version.
+
+Package: python3-multipledispatch
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: select different implementations based on signature for Python 3
+ Multiple Displatch stores and selects between different
+ implementations of the same abstract operation. It selects the
+ appropriate implementation based on a signature, or list of types. We
+ build one dispatcher per
+ abstract operation.
+ .
+ This contains the Python 3 version.
